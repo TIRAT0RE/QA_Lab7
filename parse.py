@@ -1,7 +1,7 @@
 import re
 
 def parse(client_output):
-	REGEXP = "(\d{1,4}.\d{1,4}-\d{1,4}.\d{1,4}) sec\s+(\d{1,4}.?\d{1,4})\s(\w?Bytes)\s+(\d{1,4}.?\d{1,4})\s\w?(bits/sec)"
+	REGEXP = "(\d{1,4}.\d{1,4}-\d{1,4}.\d{1,4}) sec\s+(\d{1,4}.?\d{1,4})\s(\w?Bytes)\s+(\d{1,4}.?\d{1,4})\s\w?(Mbits/sec)"
 
 	res = re.findall(REGEXP, client_output)
 	l = []
